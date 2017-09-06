@@ -8,10 +8,10 @@
 <p> Run the API by following the instruction in API.txt</p>
 
 <p>-----------------------------------------------</p>
-<br><b>Application Architecture<br>
+<br><b>Application Architecture<br><b>
 <br>
-<p>This application is accessible through WebLyer (Rest APIs)</p>
-<p>WebLyer contains the ResControllers, Filter etc</p>
-<p>The WebLayer interacts with the service Layer where business logic is written</p>
+<p>This application is accessible through Web Layer (Rest APIs)</p>
+<p>Web Layer contains the ResControllers, Filter etc</p>
+<p>The Web Layer interacts with the service Layer where business logic is written</p>
 <p>Service Layer Interacts with Data Access Layer to Store, Reterive data to/from database</p>
 <p>Data Access Layer uses hibernate to Store, Reterive data to/from database</p>
