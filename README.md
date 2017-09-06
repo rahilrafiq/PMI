@@ -8,7 +8,7 @@
 <p> Run the API by following the instruction in API.txt</p>
 
 <p>-----------------------------------------------</p>
-<br><b>Application Architecture<br><b>
+<br><b>Application Architecture<b><br>
 <br>
 <p>This application is accessible through Web Layer (Rest APIs)</p>
 <p>Web Layer contains the ResControllers, Filter etc</p>
