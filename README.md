@@ -1,4 +1,5 @@
 <p>Setup MySQL and Eclipse(neon 3) enviroment (with Maven)</p>
+<p>For MySQL set username = "root" and password = "sqldb"</p>
 <p>In MySQL create schema with name pmi</p>
 <p>Download MySQL_Script.sql file and run in MySQL in pmi schema</p>
 <p>Download PMI.rar and unzip</p>
@@ -8,7 +9,7 @@
 <p> Run the API by following the instruction in API.txt</p>
 
 <p>-----------------------------------------------</p>
-<br><b>Application Architecture<b><br>
+<br><b>Application Architecture</b><br>
 <br>
 <p>This application is accessible through Web Layer (Rest APIs)</p>
 <p>Web Layer contains the ResControllers, Filter etc</p>
