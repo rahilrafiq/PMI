@@ -1,0 +1,138 @@
+1.	Country/Office APIs
+	i.	http://localhost:8080/PMI/addCountry
+		Request Type: 	POST
+		Input JSON:	{
+"country_name":"Pakistan"
+}
+
+	ii.	http://localhost:8080/PMI/getCountryById
+		Request Type: 	POST
+		Input JSON:	{
+"countryId":"1"
+}
+
+	iii.	http://localhost:8080/PMI/getAllCountries
+		Request Type: 	GET
+
+	iv.	http://localhost:8080/PMI/updateCountryById
+		Request Type: 	POST
+		Input JSON:	{
+"countryId":"2",
+"countryName":"Itlay"
+}			
+
+	v.	http://localhost:8080/PMI/deleteCountryById
+		Request Type: 	POST
+		Input JSON:	{
+"countryId":"1"
+}
+
+2.	Item Type APIs
+	i.	http://localhost:8080/PMI/addItemType
+		Request Type: 	POST
+		Input JSON:	{
+"item_name":"Finished Product"
+}
+
+	ii.	http://localhost:8080/PMI/updateItemTypeById
+		Request Type: 	POST
+		Input JSON:	{
+"itemId":"1",
+"itemName":"Component"
+}
+
+	iii.	http://localhost:8080/PMI/deleteItemTypeById
+		Request Type: 	POST
+		Input JSON: 	{
+"itemId":"6"
+}
+
+3.	Warehouse APIs
+	i.	http://localhost:8080/PMI/addWarehouse
+		Request Type: 	POST
+		Input JSON:	{
+"country_id":"1",
+"warehouse_name":"Warehouse 1"
+}
+
+	ii.	http://localhost:8080/PMI/getWarehouseById
+		Request Type: 	POST
+		Input JSON:	{
+"warehouseId":"1"
+}
+
+	iii.	http://localhost:8080/PMI/getAllWarehouses
+		Request Type: 	GET
+
+	iv.	http://localhost:8080/PMI/updateWarehouseById
+		Request Type: 	POST
+		Input JSON:	{
+	"warehouseId":"1",
+"countryId":"1",
+"warehouseName":"Warehouse_1"
+}
+
+	v.	http://localhost:8080/PMI/deleteWarehouseById
+		Request Type: 	POST
+		Input JSON:	{
+	"warehouseId":"5"
+}
+
+
+4. 	Item APIs
+	i.	http://localhost:8080/PMI/addItem
+		Request Type: 	POST
+		Input JSON:	{
+	"itemTypeId":"1",
+	"productName":"Product A",
+	"productUnit":"10ml",
+	"qbp":"20",
+	"moq":"10",
+	"reorder_point":"10"
+}
+
+	ii.	http://localhost:8080/PMI/updateItemById
+		Request Type: 	POST
+		Input JSON:	{
+	"itemId":"2",
+	"itemTypeId":"1",
+	"productName":"Product B",
+	"productUnit":"10ml",
+	"qbp":"6",
+	"moq":"10",
+	"reorder_point":"10"
+}
+
+	iii.	http://localhost:8080/PMI/deleteItemById
+
+		Request Type: 	POST
+		Input JSON: 	{
+"itemId":"6"
+}
+
+
+5.	Item Details
+	i.	http://localhost:8080/PMI/addItemDetail
+		Request Type: 	POST
+		Input JSON: 	{
+	"itemId":"1",
+	"inStock":"1",
+	"isAvailable":"1",
+	"isSold":"0",
+	"numberOfProducts":"5",
+	"forOffice":"1",
+	"forWarehouse":"ALL"
+}
+
+	ii.	http://localhost:8080/PMI/viewItemDetails
+		Request Type: 	POST
+		Input JSON: {
+	"forOffice":"1",
+	"forWarehouse":"ALL"
+}
+
+	iii.	http://localhost:8080/PMI/viewItemSizes
+		Request Type: 	POST
+		Input JSON:	{
+	"itemId":"1"
+}
